@@ -7,9 +7,9 @@ import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-import HeaderOption from './HeaderOption.js';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import HeaderOption from './HeaderOption.js';
+
 
 function Header() {
   return (

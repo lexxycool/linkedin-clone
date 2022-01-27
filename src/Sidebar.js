@@ -1,15 +1,25 @@
 import React from 'react';
 import "./Sidebar.css";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import image from './background_image.jpg';
 
 function Sidebar() {
+
+    const recentItem = (topic)=> {
+        return (
+
+            <div className="sidebar__recentItems">
+                <span className="sidebar__hash">#</span>
+                <p>{topic}</p>
+            </div>
+        );
+        
+    }
+
   return (
     <div className="sidebar">
         <div className="sidebar__top">
-            <img src="https://images.unsplash.com/
-            photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&
-            ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&
-            w=1000&q=80" alt=""/>
+            <img src={image} alt=""/>
             <AccountCircleIcon className="sidebar__icon"/>
             <h2>Obinna Mokwe</h2>
             <h4>maxi@yahoo.com</h4>
@@ -28,6 +38,11 @@ function Sidebar() {
         </div>
         <div className="sidebar__bottom">
             <p>Recent</p>
+            {recentItem("reactjs")}
+            {recentItem('programming')}
+            {recentItem('software engineering')}
+            {recentItem('design')}
+            {recentItem('developer')}
         </div>
     </div>
 
