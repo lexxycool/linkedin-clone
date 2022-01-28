@@ -5,10 +5,10 @@ import image from './background_image.jpg';
 
 function Sidebar() {
 
-    const recentItem = (topic)=> {
+    const recentItem = (topic) => {
         return (
 
-            <div className="sidebar__recentItems">
+            <div className="sidebar__recentItem">
                 <span className="sidebar__hash">#</span>
                 <p>{topic}</p>
             </div>
