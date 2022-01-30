@@ -3,6 +3,11 @@ import "./Feed.css";
 import CreateIcon from '@mui/icons-material/Create';
 import InputOption from './InputOption.js';
 import ImageIcon from '@mui/icons-material/Image';
+import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
+import EventNoteIcon from '@mui/icons-material/EventNote';
+import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
+import Post from './Post';
+
 
 function Feed() {
   return (
@@ -17,12 +22,18 @@ function Feed() {
                 </form>
             </div>
             <div className="feed__inputOptions">
-                {/* <InputOption title="Photo"/> */}
-                
-
+                <InputOption Icon={ImageIcon} title="Photo" color="#70B5F9" />
+                <InputOption Icon={SubscriptionsIcon} title="Video" color="#E7A33E" />
+                <InputOption Icon={EventNoteIcon} title="Event" color="#C0CBCD" />
+                <InputOption Icon={CalendarViewDayIcon} title="Write article" color="#7FC15E" />    
             </div>
 
         </div>
+        <Post name="Obinna Mokwe" 
+        description="This is a text" 
+        message="Woow..this worked"
+        />
+        
     </div>
 
   );

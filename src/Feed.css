@@ -41,3 +41,20 @@
 .feed__input > form > button {
     display: none;
 }
+
+.feed__inputOptions {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.inputOption {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
